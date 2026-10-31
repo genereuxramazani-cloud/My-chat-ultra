@@ -1,0 +1,81 @@
+name: flutter_application_1
+description: "Mon application sociale BBICT - My Chat Pro"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- CORE & FIREBASE ---
+  firebase_core: ^3.1.1
+  cloud_firestore: ^5.0.2
+  firebase_auth: ^5.1.1
+  firebase_storage: ^12.0.1
+  firebase_database: ^11.3.10
+
+  # --- MULTIMEDIA & TOOLS (OPUS READY) ---
+  video_player: ^2.8.6
+  chewie: ^1.8.1
+  record: ^5.1.6
+  audioplayers: ^6.0.0
+  image_picker: ^1.2.2
+  shared_preferences: ^2.1.0
+  url_launcher: ^6.3.2
+  cupertino_icons: ^1.0.8
+  path: ^1.9.0
+  http: ^1.2.0
+  flutter_dotenv: ^6.0.1
+  intl: ^0.20.2
+  uuid: ^4.0.0
+
+  # --- GESTION DES CONTACTS & AUTH ---
+  flutter_contacts: ^1.1.9
+  local_auth: ^2.1.8
+
+  # --- BUSINESS HUB (EXPORT & PARTAGE) ---
+  share_plus: ^10.1.0
+
+  # --- GRAPHIQUES ---
+  fl_chart: ^0.69.0
+
+  # --- FACTURES PDF ---
+  pdf: ^3.11.1
+  printing: ^5.13.1
+
+  # --- NOTIFICATIONS ---
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+  # --- FICHIERS & PERMISSIONS ---
+  permission_handler: ^11.3.0
+  agora_rtc_engine: ^6.0.0
+  file_picker: ^8.0.0
+  mime: ^1.0.5
+  app_badge_plus: ^1.3.1
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/app_icon.png
+    - assets/images/
